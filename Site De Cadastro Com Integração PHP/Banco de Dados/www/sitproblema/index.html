@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gravar no Banco de Dados</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/signin.css" rel="stylesheet">
+	<style type="text/css">
+		body{
+			background-image: url("imagens/computadores.jpg")
+		}
+	</style>
+  </head>
+  <body>
+	<div class="container">
+                          <!-- FORMULÁRIO CADASTRO DE PRODUTOS -->
+      <form name="form1" class="form-signin" method="POST" action="cadastro.php">
+        <h2 class="form-signin-heading">Cadastro de produtos</h2>
+        <!-- <label for="inputnome" class="sr-only">Id_Equipamento</label>
+        <input type="text" name="Id_Equipamento" maxlength="40" id="inputnome" class="form-control" placeholder="Id_Equipamento:" required autofocus> -->
+        <label for="inputemail" class="sr-only">DESCRIÇÃO</label>
+        <input type="text" name="Descricao" maxlength="50" id="inputemail" class="form-control" placeholder="DESCRIÇÃO:" required>
+        <label for="inputemail" class="sr-only">DATA DE AQUISIÇÃO:</label>
+        <input type="date" name="DtAquisicao" maxlength="50" id="inputemail" class="form-control" placeholder="PREÇO:" required>
+        <br>
+        <label for="inputemail" class="sr-only">PREÇO:</label>
+        <input type="number" name="Preco" maxlength="50" id="inputemail" class="form-control" placeholder="PREÇO:" required>
+        <br>
+                                  <!-- BOTOES DE INTERAÇÃO -->
+        <button class="btn btn-lg btn-primary btn-block" type="submit" name="enviar">Cadastrar</button>
+        <br>
+        <button class="btn btn-lg btn-primary btn-block" type="reset" name="limpar">Limpar</button>
+        <br>
+        <a href="listar.php"><button class="btn btn-lg btn-primary btn-block" type="button" name="listar">Listar</button></a>
+
+       </form>
+       
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
